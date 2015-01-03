@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="pulse_pkg"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)/"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="This Is the PulseAudio full package. It is more capable and complex than the PulseAudio simple package."/>
+    <Files Count="4">
+      <Item1>
+        <Filename Value="pulse_channelmap.pas"/>
+        <UnitName Value="pulse_channelmap"/>
+      </Item1>
+      <Item2>
+        <Filename Value="pulse_def.pas"/>
+        <UnitName Value="pulse_def"/>
+      </Item2>
+      <Item3>
+        <Filename Value="pulse_sample.pas"/>
+        <UnitName Value="pulse_sample"/>
+      </Item3>
+      <Item4>
+        <Filename Value="pulse_version.pas"/>
+        <UnitName Value="pulse_version"/>
+      </Item4>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="FCL"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
