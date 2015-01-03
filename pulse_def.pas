@@ -26,7 +26,7 @@ unit pulse_def;
 interface
 
 uses
-  Classes, SysUtils, pulse_sample, ctypes;
+  Classes, SysUtils, pulse_sample, ctypes, unix;
 
 type
   {** The state of a connection context *}
@@ -504,9 +504,7 @@ type
      * note that this structure can be extended as part of evolutionary
      * API updates at any time in any new release.*}
      TPATimingInfo = record
-        //struct timeval timestamp;
-        timestamp_tv_sec: clong;
-        timestamp_tv_usec: clong;
+        timestamp: timeval;
         {**< The time when this timing info structure was current *}
 
         synchronized_clocks: cint;

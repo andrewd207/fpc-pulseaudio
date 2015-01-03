@@ -7,7 +7,8 @@ unit pulse_pkg;
 interface
 
 uses
-  pulse_channelmap, pulse_def, pulse_sample, pulse_version, LazarusPackageIntf;
+  pulse_channelmap, pulse_def, pulse_sample, pulse_version, pulse_rtclock, 
+  pulse_mainloop_api, LazarusPackageIntf;
 
 implementation
 
