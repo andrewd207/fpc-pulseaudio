@@ -1,0 +1,10 @@
+*.[oa]
+*.ppu
+*.lps
+*.compiled
+*.bak*
+*.exe
+*.?*~
+backup
+lib
+pulse_simple_audio_cat_test
