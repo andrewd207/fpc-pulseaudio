@@ -579,6 +579,7 @@ type
      * block or ignore SIGCHLD signals, since this cannot be done in a
      * thread compatible way. You might have to do this in
      * prefork/postfork. *}
+     PPASpawnApi = ^TPASpawnApi;
      TPASpawnApi = record
         prefork: procedure;
         //void (*prefork)(void);
