@@ -22,6 +22,8 @@
 unit pulse_def;
 
 {$mode objfpc}{$H+}
+{$PACKRECORDS c}
+{$CALLING cdecl}
 
 interface
 
