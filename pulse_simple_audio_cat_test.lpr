@@ -7,8 +7,7 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Classes, Sysutils,
-  ctypes, pipes, pulse_simple, pulse_sample, pulse_def
-  { you can add units after this };
+  ctypes, pipes, pulse_simple, pulse_sample, pulse_def;
 
 const
   BUFSIZE = 1024;

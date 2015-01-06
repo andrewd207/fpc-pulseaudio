@@ -10,7 +10,7 @@
     </CompilerOptions>
     <Description Value="This Is the PulseAudio full package. It is more capable and complex than the PulseAudio simple package."/>
     <Version Major="50"/>
-    <Files Count="6">
+    <Files Count="9">
       <Item1>
         <Filename Value="pulse_channelmap.pas"/>
         <UnitName Value="pulse_channelmap"/>
@@ -35,6 +35,18 @@
         <Filename Value="pulse_mainloop_api.pas"/>
         <UnitName Value="pulse_mainloop_api"/>
       </Item6>
+      <Item7>
+        <Filename Value="pulse_format.pas"/>
+        <UnitName Value="pulse_format"/>
+      </Item7>
+      <Item8>
+        <Filename Value="pulse_proplist.pas"/>
+        <UnitName Value="pulse_proplist"/>
+      </Item8>
+      <Item9>
+        <Filename Value="pulse_operation.pas"/>
+        <UnitName Value="pulse_operation"/>
+      </Item9>
     </Files>
     <Type Value="RunAndDesignTime"/>
     <RequiredPkgs Count="1">
