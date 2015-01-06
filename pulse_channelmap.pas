@@ -129,6 +129,8 @@ type
     cmDEFAULT = cmAIFF
     );
 
+   TPAChannelPositionMask = QWord;
+
    PPAChannelMap = ^TPAChannelMap;
 
    { TPAChannelMap }
@@ -153,7 +155,7 @@ type
      function  ToName: PChar;
      function  ToPrettyName: PChar;
      function  HasPosition(position: QWord): Boolean;
-     function  Mask: QWord;
+     function  Mask: TPAChannelPositionMask;
    end;
 
 
@@ -245,7 +247,7 @@ function pa_channel_map_to_pretty_name({const} map: PPAChannelMap): PChar extern
 function pa_channel_map_has_position({const} map: PPAChannelMap; p: QWord): cint external;
 
 {** Generates a bit mask from a channel map. \since 0.9.16 *}
-function pa_channel_map_mask({const} map: PPAChannelMap): QWord external;
+function pa_channel_map_mask({const} map: PPAChannelMap): TPAChannelPositionMask external;
 
 implementation
 
@@ -326,7 +328,7 @@ begin
   result := pa_channel_map_has_position(@self, position) <> 0;
 end;
 
-function TPAChannelMap.Mask: QWord;
+function TPAChannelMap.Mask: TPAChannelPositionMask;
 begin
   result := pa_channel_map_mask(@self);
 end;

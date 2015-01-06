@@ -9,7 +9,7 @@ interface
 uses
   pulse_channelmap, pulse_def, pulse_sample, pulse_version, pulse_rtclock, 
   pulse_mainloop_api, pulse_format, pulse_proplist, pulse_operation, 
-  LazarusPackageIntf;
+  pulse_volume, LazarusPackageIntf;
 
 implementation
 
