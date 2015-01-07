@@ -10,7 +10,7 @@ uses
   pulse_channelmap, pulse_def, pulse_sample, pulse_version, pulse_rtclock, 
   pulse_mainloop_api, pulse_format, pulse_proplist, pulse_operation, 
   pulse_volume, pulse_context, pulse_error, pulse_stream, pulse_scache, 
-  LazarusPackageIntf;
+  pulse_subscribe, LazarusPackageIntf;
 
 implementation
 
