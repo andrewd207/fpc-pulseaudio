@@ -22,6 +22,8 @@
 unit pulse_subscribe;
 
 {$mode objfpc}{$H+}
+{$PACKRECORDS c}
+{$CALLING cdecl}
 
 interface
 
