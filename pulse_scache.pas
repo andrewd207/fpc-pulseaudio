@@ -53,11 +53,11 @@ function pa_context_remove_sample(c: PPAContext; {const} name: PChar; cb: TPACon
  * object *}
 function pa_context_play_sample(
         c: PPAContext               {**< Context *};
-        {const} name: PChar            {**< Name of the sample to play *};
-        {const} dev: PChar             {**< Sink to play this sample on *};
-        volumn: TPAVolume          {**< Volume to play this sample with. Starting with 0.9.15 you may pass here PA_VOLUME_INVALID which will leave the decision about the volume to the server side which is a good idea. *} ;
-        cb: TPAContextSuccessCB  {**< Call this function after successfully starting playback, or NULL *};
-        userdata: pointer              {**< Userdata to pass to the callback *}
+        {const} name: PChar         {**< Name of the sample to play *};
+        {const} dev: PChar          {**< Sink to play this sample on *};
+        volumn: TPAVolume           {**< Volume to play this sample with. Starting with 0.9.15 you may pass here PA_VOLUME_INVALID which will leave the decision about the volume to the server side which is a good idea. *} ;
+        cb: TPAContextSuccessCB     {**< Call this function after successfully starting playback, or NULL *};
+        userdata: pointer           {**< Userdata to pass to the callback *}
         ): PPAOperation external;
 
 {** Play a sample from the sample cache to the specified device,
