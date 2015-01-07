@@ -505,6 +505,7 @@ type
      * described here are implemented in pa_stream_get_latency(). Please
      * note that this structure can be extended as part of evolutionary
      * API updates at any time in any new release.*}
+     PPATimingInfo = ^TPATimingInfo;
      TPATimingInfo = record
         timestamp: timeval;
         {**< The time when this timing info structure was current *}
@@ -723,6 +724,8 @@ type
     {**< When suspended, actual source access can be closed, for instance \since 0.9.15 *}
 
  );
+
+ TPAFreeCB = procedure(P: Pointer);
 
 const
   {** A stream policy/meta event requesting that an application should

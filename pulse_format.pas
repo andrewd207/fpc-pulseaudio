@@ -79,6 +79,7 @@ type
 type
   ppcint = ^pcint;
   {** Represents the format of data provided in a stream or processed by a sink. \since 1.0 *}
+  PPPAFormatInfo = ^PPAFormatInfo;
   PPAFormatInfo = ^ TPAFormatInfo;
 
   { TPAFormatInfo }
