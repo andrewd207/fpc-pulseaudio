@@ -2,14 +2,15 @@
 <CONFIG>
   <Package Version="4">
     <Name Value="pulse_simple_pkg"/>
+    <Type Value="RunAndDesignTime"/>
     <CompilerOptions>
       <Version Value="11"/>
       <SearchPaths>
-        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)/"/>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
     <Version Major="5"/>
-    <Files Count="5">
+    <Files Count="6">
       <Item1>
         <Filename Value="pulse_channelmap.pas"/>
         <UnitName Value="pulse_channelmap"/>
@@ -30,8 +31,11 @@
         <Filename Value="pulse_version.pas"/>
         <UnitName Value="pulse_version"/>
       </Item5>
+      <Item6>
+        <Filename Value="pulse_error.pas"/>
+        <UnitName Value="pulse_error"/>
+      </Item6>
     </Files>
-    <Type Value="RunAndDesignTime"/>
     <RequiredPkgs Count="1">
       <Item1>
         <PackageName Value="FCL"/>

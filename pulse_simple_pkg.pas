@@ -8,7 +8,7 @@ interface
 
 uses
   pulse_channelmap, pulse_def, pulse_sample, pulse_simple, pulse_version, 
-  LazarusPackageIntf;
+  pulse_error, LazarusPackageIntf;
 
 implementation
 

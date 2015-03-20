@@ -2,15 +2,16 @@
 <CONFIG>
   <Package Version="4">
     <Name Value="pulse_pkg"/>
+    <Type Value="RunAndDesignTime"/>
     <CompilerOptions>
       <Version Value="11"/>
       <SearchPaths>
-        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)/"/>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
     <Description Value="This Is the PulseAudio full package. It is more capable and complex than the PulseAudio simple package."/>
     <Version Major="5"/>
-    <Files Count="15">
+    <Files Count="16">
       <Item1>
         <Filename Value="pulse_channelmap.pas"/>
         <UnitName Value="pulse_channelmap"/>
@@ -71,8 +72,11 @@
         <Filename Value="pulse_subscribe.pas"/>
         <UnitName Value="pulse_subscribe"/>
       </Item15>
+      <Item16>
+        <Filename Value="pulse_util.pas"/>
+        <UnitName Value="pulse_util"/>
+      </Item16>
     </Files>
-    <Type Value="RunAndDesignTime"/>
     <RequiredPkgs Count="1">
       <Item1>
         <PackageName Value="FCL"/>
