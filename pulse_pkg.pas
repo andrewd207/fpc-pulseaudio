@@ -11,7 +11,8 @@ uses
   pulse_mainloop_api, pulse_format, pulse_proplist, pulse_operation, 
   pulse_volume, pulse_context, pulse_error, pulse_stream, pulse_scache, 
   pulse_subscribe, pulse_util, pulse_timeval, pulse_thread_mainloop, 
-  pulse_mainloop_signal, pulse_mainloop, LazarusPackageIntf;
+  pulse_mainloop_signal, pulse_mainloop, pulse_glib_mainloop, 
+  LazarusPackageIntf;
 
 implementation
 
