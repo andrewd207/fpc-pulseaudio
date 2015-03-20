@@ -11,7 +11,7 @@
     </CompilerOptions>
     <Description Value="This Is the PulseAudio full package. It is more capable and complex than the PulseAudio simple package."/>
     <Version Major="5"/>
-    <Files Count="16">
+    <Files Count="17">
       <Item1>
         <Filename Value="pulse_channelmap.pas"/>
         <UnitName Value="pulse_channelmap"/>
@@ -76,6 +76,10 @@
         <Filename Value="pulse_util.pas"/>
         <UnitName Value="pulse_util"/>
       </Item16>
+      <Item17>
+        <Filename Value="pulse_timeval.pas"/>
+        <UnitName Value="pulse_timeval"/>
+      </Item17>
     </Files>
     <RequiredPkgs Count="1">
       <Item1>
