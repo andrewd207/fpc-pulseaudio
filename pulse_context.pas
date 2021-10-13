@@ -50,8 +50,8 @@ type
    TPAContextEventCB = procedure(c: PPAContext; {const} name: pchar; p: PPAProplist; userdata: pointer);
 
   { TPAContext }
-
-  TPAContext = object sealed
+  {See pulse_intospect.pas TPAContextHelper for additional methods }
+  TPAContext = object {sealed}
     function  New(AMainLoop: PPAMainLoopAPI; AName: PChar): PPAContext; static;
     function  NewWithPropList(AMainLoop: PPAMainLoopAPI; AName: PChar; APropList: PPAProplist): PPAContext; static;
     procedure Unref;

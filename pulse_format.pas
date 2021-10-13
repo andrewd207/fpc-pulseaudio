@@ -84,7 +84,7 @@ type
 
   { TPAFormatInfo }
 
-  TPAFormatInfo = object sealed
+  TPAFormatInfo = object {sealed}
     {**< The encoding used for the format *}
     encoding: TPAEncoding ;
     {**< Additional encoding-specific properties such as sample rate, bitrate, etc. *}

@@ -68,7 +68,7 @@ type
 
   { TPAChannelVolume }
 
-  TPAChannelVolume = object sealed
+  TPAChannelVolume = object {sealed}
     channels: Byte;                     {**< Number of channels *}
     Values: array[0..PA_CHANNELS_MAX-1] of TPAVolume;{**< Per-channel volume *}
     function  Equal(AChannelVolume: PPAChannelVolume): Boolean;

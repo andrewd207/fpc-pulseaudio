@@ -26,7 +26,7 @@ unit pulse_def;
 {$CALLING cdecl}
 
 interface
-
+{$IFDEF UNIX}
 uses
   Classes, SysUtils, pulse_sample, ctypes, unix;
 
@@ -744,6 +744,7 @@ const
  * to connect a new stream to renegotiate a format and continue
  * playback. \since 1.0 *}
   PA_STREAM_EVENT_FORMAT_LOST = 'format-lost';
+{$ENDIF}
 implementation
 
 end.

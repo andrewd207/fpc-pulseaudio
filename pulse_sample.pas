@@ -77,7 +77,7 @@ type
 
   { TPASampleSpec }
 
-  TPASampleSpec = object sealed
+  TPASampleSpec = object{ sealed}
     // The sample format
     Format: TPASampleFormat;
     // The sample rate. (e.g. 44100)

@@ -283,16 +283,16 @@ type
 
   { TPAProplist }
 
-  TPAProplist = object sealed
+  TPAProplist = object {sealed}
     function  New: PPAProplist; static;
     function  NewFromString(AString: PChar): PPAProplist; static;
     procedure Free;
     function  KeyValid(AKey: PChar): Boolean static;
     function  SetString(AKey, AValue: PChar): cint;
-    function  SetPair(AKey, APair: PChar): cint; // 'akey=avalue';
+    function  SetPair(APair: PChar): cint; // 'akey=avalue';
     //function  SetFormat(AKey, AFormat: PChar): cint; varargs;
     function  Set_(AKey: PChar; AData: Pointer; ASize: csize_t): cint;
-    function  Get(AKey: PChar; AData: PPointer; ASize: csize_t): cint;
+    function Get(AKey: PChar; AData: PPointer; ASize: pcsize_t): cint;
     procedure Update(AMode: TPAUpdateMode; AOther: PPAProplist);
     function  Unset(AKey: PChar): cint;
     function  UnsetMany(Keys: PPChar): cint; // last element must be nil
@@ -353,7 +353,7 @@ function pa_proplist_gets(p: PPAProplist; key: pchar): pchar external;
  * point to an internally allocated buffer. The caller should make a
  * copy of the data before the property list is accessed again. \since
  * 0.9.11 *}
-function pa_proplist_get(p: PPAProplist; key: pchar; data: PPointer; nbytes: csize_t): cint external;
+function pa_proplist_get(p: PPAProplist; key: pchar; data: PPointer; nbytes: pcsize_t): cint external;
 
 {** Merge property list "other" into "p", adhering the merge mode as
  * specified in "mode". \since 0.9.11 *}
@@ -445,7 +445,7 @@ begin
  Result := pa_proplist_sets(@self, AKey, AValue);
 end;
 
-function TPAProplist.SetPair(AKey, APair: PChar): cint;
+function TPAProplist.SetPair(APair: PChar): cint;
 begin
   Result := pa_proplist_setp(@self, APair);
 end;
@@ -455,7 +455,7 @@ begin
   Result := pa_proplist_set(@self, AKey, AData, ASize);
 end;
 
-function TPAProplist.Get(AKey: PChar; AData: PPointer; ASize: csize_t): cint;
+function TPAProplist.Get(AKey: PChar; AData: PPointer; ASize: pcsize_t): cint;
 begin
   Result := pa_proplist_get(@self, AKey, AData, ASize);
 end;

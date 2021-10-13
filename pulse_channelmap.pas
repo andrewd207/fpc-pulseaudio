@@ -135,7 +135,7 @@ type
 
    { TPAChannelMap }
 
-   TPAChannelMap = object sealed
+   TPAChannelMap = object{ sealed}
      {**< Number of channels *}
      channels: Byte;
      {**< Channel labels *}

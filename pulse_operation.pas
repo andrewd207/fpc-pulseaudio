@@ -39,7 +39,7 @@ type
 
   { TPAOperation }
 
-  TPAOperation = object sealed
+  TPAOperation = object {sealed}
     function Ref: PPAOperation;
     procedure Unref;
     procedure Cancel;

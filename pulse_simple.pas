@@ -21,6 +21,7 @@
 ***}
 unit pulse_simple;
 
+{$IFDEF UNIX}
 {$mode objfpc}{$H+}
 {$CALLING CDECL}
 {$PACKRECORDS c}
@@ -135,6 +136,10 @@ function TPASimple.Flush(error: pcint): cint;
 begin
   Result := pa_simple_flush(@self, error);
 end;
+{$ELSE}
+interface
+implementation
+{$ENDIF}
 
 end.
 

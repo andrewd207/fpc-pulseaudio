@@ -39,7 +39,6 @@
       <Unit0>
         <Filename Value="pulse_simple_audio_cat_test.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="pulse_simple_audio_cat_test"/>
       </Unit0>
     </Units>
   </ProjectOptions>

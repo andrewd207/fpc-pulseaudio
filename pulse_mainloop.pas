@@ -24,6 +24,7 @@ unit pulse_mainloop;
 {$mode objfpc}{$H+}
 {$CALLING CDECL}
 {$PACKRECORDS c}
+{$LinkLib pulse-mainloop-glib}
 
 interface
 
@@ -43,7 +44,7 @@ type
 
   { TPAMainloop }
 
-  TPAMainloop = object sealed
+  TPAMainloop = object{ sealed}
     function  New: PPAMainloop; static;
     procedure Free;
     function  Prepare(ATimeOut: cint): cint;
