@@ -37,7 +37,7 @@ type
 
   { TPASimple }
 
-  TPASimple = object sealed
+  TPASimple = object //sealed
     function New(
       server: PChar;           {**< Server name, or NULL for default *}
       name: PChar;             {**< A descriptive name for this client (application name, ...) *}

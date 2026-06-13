@@ -35,7 +35,7 @@ type
 
   { TPAThreadedMainloop }
 
-  TPAThreadedMainloop = object sealed
+  TPAThreadedMainloop = object {sealed}
     function  New: PPAThreadedMainloop;
     procedure Free;
     function  Start: cint;

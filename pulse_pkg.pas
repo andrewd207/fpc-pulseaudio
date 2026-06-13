@@ -4,6 +4,7 @@
 
 unit pulse_pkg;
 
+{$warn 5023 off : no warning about unused units}
 interface
 
 uses
@@ -12,7 +13,7 @@ uses
   pulse_volume, pulse_context, pulse_error, pulse_stream, pulse_scache, 
   pulse_subscribe, pulse_util, pulse_timeval, pulse_thread_mainloop, 
   pulse_mainloop_signal, pulse_mainloop, pulse_glib_mainloop, 
-  pulse_introspect, LazarusPackageIntf;
+  pulse_introspect, pulse_class, LazarusPackageIntf;
 
 implementation
 
